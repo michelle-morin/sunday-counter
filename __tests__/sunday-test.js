@@ -1,4 +1,5 @@
 import { leapYear } from './../src/leapyear.js';
+import { daysInYear } from './../src/daysInYear.js';
 
 describe('leapYear', () => {
 
@@ -17,5 +18,13 @@ describe('leapYear', () => {
   test('should determine that a year is a leap year if it is divisible by 400', () => {
     var result = leapYear(2000);
     expect(result).toEqual(true);
+  });
+});
+
+describe('daysInYear', () => {
+
+  test('should return number of days in any year', () => {
+    var numDays = daysInYear(1900);
+    expect(numDays).toEqual(365);
   });
 });
