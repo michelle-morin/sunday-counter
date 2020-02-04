@@ -8,3 +8,7 @@ export function daysInYear(year) {
     return 365;
   }
 };
+
+export function startDayOfYear(year) {
+  
+}

@@ -1,5 +1,5 @@
 import { leapYear } from './../src/leapyear.js';
-import { daysInYear } from './../src/daysInYear.js';
+import { daysInYear, startDayOfYear } from './../src/daysInYear.js';
 
 describe('leapYear', () => {
 
@@ -26,5 +26,13 @@ describe('daysInYear', () => {
   test('should return number of days in any year', () => {
     var numDays = daysInYear(1900);
     expect(numDays).toEqual(365);
+  });
+});
+
+describe('startDayOfYear', () => {
+
+  test('should return start day of a year', () => {
+    var day = startDayOfYear(1901);
+    expect(day).toEqual("Tuesday");
   });
 });
