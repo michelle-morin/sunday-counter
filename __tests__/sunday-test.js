@@ -6,9 +6,16 @@ describe('leapYear', () => {
     var result = leapYear(1993);
     expect(result).toEqual(false);
   });
-
   test('should determine that a year is a leap year when the year is divisible by 4', () => {
     var result = leapYear(2004);
+    expect(result).toEqual(true);
+  });
+  test('should determine a year is not a leap year if the year is divisible by 100', () => {
+    var result = leapYear(1900);
+    expect(result).toEqual(false);
+  });
+  test('should determine that a year is a leap year if it is divisible by 400', () => {
+    var result = leapYear(2000);
     expect(result).toEqual(true);
   });
 });
