@@ -32,7 +32,7 @@ describe('daysInYear', () => {
 describe('startDayOfYear', () => {
 
   test('should return start day of a year', () => {
-    var day = startDayOfYear(1901);
-    expect(day).toEqual("Tuesday");
+    startDayOfYear();
+    expect(firstDaysOfYears[0]).toEqual("Tuesday");
   });
 });
